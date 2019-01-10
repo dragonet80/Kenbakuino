@@ -25,7 +25,8 @@ void LEDs::ShiftOut(byte LEDs)
 {
   digitalWrite(PIN_LEDS_ST, LOW);
   // shift out the bits:
-  shiftOut(PIN_LEDS_DS, PIN_LEDS_SH, LSBFIRST, LEDs);  
+  //shiftOut(PIN_LEDS_DS, PIN_LEDS_SH, LSBFIRST, LEDs); /* Original from Mark Wilson. gives data leds inverted positions to me */
+  shiftOut(PIN_LEDS_DS, PIN_LEDS_SH, MSBFIRST, LEDs);
   //take the latch pin high so the LEDs will light up:
   digitalWrite(PIN_LEDS_ST, HIGH);
 }
