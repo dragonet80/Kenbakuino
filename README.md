@@ -1,5 +1,5 @@
 # Kenbakuino
-This is a form from: https://github.com/funnypolynomial/Kenbakuino
+This is a fork from: https://github.com/funnypolynomial/Kenbakuino
 
 This is in WIP state!
 
